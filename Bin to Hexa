@@ -1,0 +1,18 @@
+#include <stdio.h>
+ 
+int main()
+{
+    long int binval, hexadecval = 0, i = 1, rim;
+ 
+    printf("Enter the binary number: ");
+    scanf("%ld", &binval);
+    while (binval != 0)
+    {
+        rim = binval % 10;
+        hexadecval = hexadecval + rim * i;
+        i = i * 2;
+        binval = bin / 10;
+    }
+    printf("Equivalent hexadecimal value: %lX", hexadecimalval);
+    return 0;
+}
